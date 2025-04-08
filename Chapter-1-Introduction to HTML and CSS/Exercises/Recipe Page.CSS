@@ -1,0 +1,114 @@
+/* recipe-styles.css */
+
+/* General page styling */
+body {
+    font-family: 'Comic Sans MS', 'Helvetica', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff8e1; /* Light cream background */
+    color: #5d4037; /* Brown text */
+    line-height: 1.6;
+}
+
+/* Recipe title styling */
+h1 {
+    text-align: center;
+    color: #d35400; /* Orange-brown */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-size: 2.5em;
+    border-bottom: 3px dotted #f39c12;
+    padding-bottom: 10px;
+}
+
+/* Section headings */
+h2 {
+    color: #e67e22; /* Orange */
+    background-color: #ffd180; /* Light orange */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Recipe description */
+.description {
+    font-size: 1.1em;
+    background-color: #ffe0b2; /* Lighter orange */
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 5px solid #f39c12;
+    margin-bottom: 25px;
+}
+
+/* Ingredients list styling */
+.ingredients-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.ingredients-list li {
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-left: 4px solid #ff9800;
+}
+
+/* Alternating colors for list items */
+.ingredients-list li:nth-child(odd) {
+    background-color: #ffecb3; /* Light yellow */
+}
+
+.ingredients-list li:nth-child(even) {
+    background-color: #ffe0b2; /* Light orange */
+}
+
+/* Adding checkmarks before ingredient items */
+.ingredients-list li::before {
+    content: "✓";
+    color: #d35400;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Method list styling */
+.method-list {
+    background-color: #fff3e0; /* Very light orange */
+    padding: 20px 20px 20px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.method-list li {
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+/* Highlight important parts */
+.highlight {
+    color: #e74c3c; /* Red */
+    font-weight: bold;
+}
+
+/* Styling for notes */
+.note {
+    font-style: italic;
+    color: #d35400; /* Orange-brown */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #795548; /* Brown */
+    font-size: 0.9em;
+}
+
+/* Adding hover effects to ingredients and method steps for interactivity */
+.ingredients-list li:hover, .method-list li:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+    background-color: #ffe082; /* Brighter yellow on hover */
+}
