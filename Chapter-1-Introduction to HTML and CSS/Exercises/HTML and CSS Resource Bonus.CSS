@@ -1,0 +1,180 @@
+/* styles.css - HTML & CSS Quick Reference Guide */
+
+/* --- Basic Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- General Styling --- */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9fc;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Header Styling --- */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.intro {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* --- Main Content --- */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- Section Styling --- */
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+}
+
+section > p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* --- Article Cards --- */
+.tag-card, .prop-card {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 0 8px 8px 0;
+}
+
+.prop-card {
+    border-left-color: #e74c3c;
+}
+
+h3 {
+    color: #3498db;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.prop-card h3 {
+    color: #e74c3c;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+/* --- Code Examples --- */
+.code-example {
+    background-color: #2c3e50;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+pre {
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    padding: 15px;
+    color: #ecf0f1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Adjust inline code appearance (not in pre blocks) */
+p code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #e74c3c;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    .tag-card, .prop-card {
+        padding: 15px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    pre {
+        font-size: 0.85rem;
+    }
+}
+
+/* --- Hover Effects --- */
+.tag-card:hover, .prop-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* A little easter egg for fun */
+h1:hover {
+    color: #f39c12;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
