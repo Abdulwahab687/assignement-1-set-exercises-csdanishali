@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quick Reference Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Quick Reference Guide</h1>
+        <p class="intro">A handy guide for web development beginners - created by a fellow student who's been there!</p>
+    </header>
+
+    <main>
+        <section id="html-basics">
+            <h2>HTML Basics</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. Here are some of the most common tags we use:</p>
+            
+            <article class="tag-card">
+                <h3>Headings: &lt;h1&gt; to &lt;h6&gt;</h3>
+                <p>Headings help organize your content. &lt;h1&gt; is the most important (usually the page title) and &lt;h6&gt; is the least important.</p>
+                <div class="code-example">
+                    <pre><code>&lt;h1&gt;This is a Main Heading&lt;/h1&gt;
+&lt;h2&gt;This is a Section Heading&lt;/h2&gt;
+&lt;h3&gt;This is a Subsection Heading&lt;/h3&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Paragraphs: &lt;p&gt;</h3>
+                <p>Paragraphs are used for blocks of text. Browsers automatically add some space before and after each paragraph.</p>
+                <div class="code-example">
+                    <pre><code>&lt;p&gt;This is a paragraph of text. Paragraphs are block-level elements.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Links: &lt;a&gt;</h3>
+                <p>The anchor tag is used to create hyperlinks to other web pages, files, or locations within the same page.</p>
+                <div class="code-example">
+                    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+&lt;a href="#section-id"&gt;Jump to Section&lt;/a&gt;</code></pre>
+                </div>
+            </article>
+            
+            <article class="tag-card">
+                <h3>Images: &lt;img&gt;</h3>
+                <p>The image tag embeds images into your webpage. It's a self-closing tag (no end tag needed).</p>
+                <div class="code-example">
+                    <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Lists: &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h3>
+                <p>Lists help organize information. Use &lt;ul&gt; for unordered (bullet) lists and &lt;ol&gt; for ordered (numbered) lists.</p>
+                <div class="code-example">
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Unordered list item 1&lt;/li&gt;
+  &lt;li&gt;Unordered list item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ordered list item 1&lt;/li&gt;
+  &lt;li&gt;Ordered list item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Div & Span: &lt;div&gt; & &lt;span&gt;</h3>
+                <p>&lt;div&gt; is a block-level container, while &lt;span&gt; is an inline container for text and elements.</p>
+                <div class="code-example">
+                    <pre><code>&lt;div&gt;This is a block-level container&lt;/div&gt;
+&lt;p&gt;This paragraph contains a &lt;span&gt;highlighted&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Code & Pre: &lt;code&gt; & &lt;pre&gt;</h3>
+                <p>Use &lt;code&gt; for inline code and &lt;pre&gt; to preserve formatting of code blocks.</p>
+                <div class="code-example">
+                    <pre><code>&lt;p&gt;The &lt;code&gt;console.log()&lt;/code&gt; function outputs to the console.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function greet() {
+  console.log("Hello world!");
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+                </div>
+            </article>
+            
+            <article class="tag-card">
+                <h3>Tables: &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</h3>
+                <p>Tables are used to display data in rows and columns.</p>
+                <div class="code-example">
+                    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Forms: &lt;form&gt;, &lt;input&gt;, &lt;button&gt;</h3>
+                <p>Forms allow users to input data and submit it.</p>
+                <div class="code-example">
+                    <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+            </article>
+
+            <article class="tag-card">
+                <h3>Comments: &lt;!-- --&gt;</h3>
+                <p>Comments aren't displayed on the page but help document your code.</p>
+                <div class="code-example">
+                    <pre><code>&lt;!-- This is a comment. It won't be visible on the page. --&gt;</code></pre>
+                </div>
+            </article>
+        </section>
+
+        <section id="css-basics">
+            <h2>CSS Basics</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. Here are some key properties:</p>
+
+            <article class="prop-card">
+                <h3>Color Properties</h3>
+                <p>Control the color of text and backgrounds.</p>
+                <div class="code-example">
+                    <pre><code>/* Text color */
+color: blue;
+color: #FF5733;
+color: rgb(255, 87, 51);
+
+/* Background color */
+background-color: yellow;
+background-color: #F2F2F2;
+background-color: rgba(242, 242, 242, 0.5); /* with transparency */</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Font Properties</h3>
+                <p>Control the appearance of text.</p>
+                <div class="code-example">
+                    <pre><code>/* Font family */
+font-family: Arial, sans-serif;
+
+/* Font size */
+font-size: 16px;
+font-size: 1.2em;
+font-size: 120%;
+
+/* Font weight */
+font-weight: bold;
+font-weight: 700;
+
+/* Font style */
+font-style: italic;</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Box Model Properties</h3>
+                <p>Control the spacing and borders around elements.</p>
+                <div class="code-example">
+                    <pre><code>/* Margin - space outside the element */
+margin: 10px;
+margin: 10px 20px; /* top/bottom left/right */
+margin: 5px 10px 15px 20px; /* top right bottom left */
+
+/* Padding - space inside the element */
+padding: 10px;
+
+/* Border */
+border: 1px solid black;
+border-radius: 5px; /* rounded corners */</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Layout Properties</h3>
+                <p>Control how elements are positioned and displayed.</p>
+                <div class="code-example">
+                    <pre><code>/* Display types */
+display: block;
+display: inline;
+display: flex;
+display: grid;
+
+/* Position */
+position: relative;
+position: absolute;
+position: fixed;</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Flexbox</h3>
+                <p>A modern layout model for arranging items in rows or columns.</p>
+                <div class="code-example">
+                    <pre><code>/* Parent container */
+display: flex;
+flex-direction: row; /* or column */
+justify-content: space-between;
+align-items: center;
+
+/* Child items */
+flex: 1;
+align-self: flex-start;</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Text Properties</h3>
+                <p>Control text alignment and decoration.</p>
+                <div class="code-example">
+                    <pre><code>/* Text alignment */
+text-align: center;
+text-align: left;
+text-align: right;
+
+/* Text decoration */
+text-decoration: underline;
+text-decoration: none; /* remove underlines from links */</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Transform & Transition</h3>
+                <p>Add animations and transformations to elements.</p>
+                <div class="code-example">
+                    <pre><code>/* Transforms */
+transform: rotate(45deg);
+transform: scale(1.5);
+
+/* Transitions */
+transition: all 0.3s ease;
+transition: background-color 0.5s, transform 0.3s;</code></pre>
+                </div>
+            </article>
+
+            <article class="prop-card">
+                <h3>Media Queries</h3>
+                <p>Create responsive designs that adapt to different screen sizes.</p>
+                <div class="code-example">
+                    <pre><code>/* Apply styles only on screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+  }
+}</code></pre>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by a student who's still learning. Thanks for checking out my reference guide!</p>
+        <p>Last updated: April 2025</p>
+    </footer>
+</body>
+</html>
