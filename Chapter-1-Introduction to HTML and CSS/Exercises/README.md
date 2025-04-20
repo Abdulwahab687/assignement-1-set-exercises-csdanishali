@@ -32,4 +32,4 @@ Create a HTML & CSS quick-reference guide that covers all of the tags we've cove
 * Include a minimum of 10 HTML tags.
 * Include a minimum of 8 CSS properties.
 * Include a variety of different headers.
-* Make sure the code is indented and spaced properly.
+* Make sure the code is indented and spaced properly.   
