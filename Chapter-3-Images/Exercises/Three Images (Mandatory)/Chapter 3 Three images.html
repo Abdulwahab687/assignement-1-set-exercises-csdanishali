@@ -4,93 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>America's Most Beautiful National Parks</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <style>
+    <link rel="stylesheet" href="Style.css">
         body {
             font-family: Arial, sans-serif;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #47e91f;
             color: #333;
+            line-height: 1.6;
         }
         
         h1 {
             text-align: center;
-            color: #1a5527;
+            color: #006400;
             margin-bottom: 30px;
+            font-size: 28px;
         }
         
         .parks-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 20px;
-        }
-        
-        .park-card {
-            width: 350px;
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 20px;
         }
         
-        .park-card h2 {
-            color: #1a5527;
-            padding: 0 15px;
+        .park-card {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
-        .park-card p {
-            padding: 0 15px;
-            line-height: 1.5;
-        }
-        
-        .park-card .description {
-            min-height: 120px;
+        .park-title {
+            color: #006400;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 18px;
         }
         
         .image-container {
-            padding: 15px;
             position: relative;
             overflow: hidden;
+            margin-bottom: 10px;
+            border-radius: 5px;
         }
         
-        .park-card img {
+        img {
+            display: block;
             width: 100%;
             height: auto;
-            display: block;
-            border-radius: 4px;
-            transition: filter 0.5s ease;
+            transition: all 0.5s ease;
         }
         
-        /* Hover effect for images */
+        /* Dark mode hover effect */
+        .image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+        
+        .image-container:hover::after {
+            opacity: 1;
+        }
+        
         .image-container:hover img {
-            filter: grayscale(0.9) brightness(0.8) !important;
+            filter: brightness(0.7) contrast(1.2);
         }
         
-        /* CSS Filters for default state */
-        .yosemite img {
-            filter: brightness(1.1) contrast(1.1);
+        .park-description {
+            font-size: 14px;
+            margin-bottom: 12px;
         }
         
-        .grand-canyon img {
-            filter: saturate(1.2);
-        }
-        
-        .yellowstone img {
-            filter: contrast(1.1) saturate(1.3);
-        }
-        
-        .license {
+        .license-info {
             font-size: 12px;
             color: #666;
-            padding: 0 15px 15px;
-            border-top: 1px solid #eee;
-            margin-top: 10px;
-            padding-top: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
         }
     </style>
 </head>
@@ -98,59 +104,56 @@
     <h1>America's Most Beautiful National Parks</h1>
     
     <div class="parks-container">
-        <!-- Yosemite National Park -->
-        <div class="park-card yosemite">
+        <div class="park-card">
             <div class="image-container">
-                <img src="Yosemite National Park.jpg" 
-                     alt="Scenic view of Yosemite Valley showing El Capitan, Half Dome and Bridalveil Fall" 
-                     width="640" 
-                     height="427"
-                     title="Yosemite Valley - Tunnel View">
+                <img 
+                    src="Yosemite National Park.jpg" 
+                    alt="Yosemite Valley with El Capitan granite cliff and waterfall" 
+                    width="640" 
+                    height="427" 
+                    title="Yosemite Valley with iconic El Capitan rock formation">
             </div>
-            <h2>Yosemite National Park</h2>
-            <div class="description">
-                <p>Yosemite Valley is known for its breathtaking views, towering granite cliffs, and magnificent waterfalls. This iconic view features El Capitan on the left and Bridalveil Fall on the right.</p>
-            </div>
-            <div class="license">
-                <p>Image License: Public Domain (CC0). This image is free to use for commercial and non-commercial purposes.</p>
+            <h2 class="park-title">Yosemite National Park</h2>
+            <p class="park-description">Yosemite Valley is known for its breathtaking views, towering granite cliffs, and magnificent waterfalls. This iconic view features El Capitan on the left and Bridalveil Fall on the right.</p>
+            <div class="license-info">
+                Image License: Public Domain (CC0). This image is free to use for commercial and non-commercial projects without attribution.
             </div>
         </div>
-
-        <!-- Grand Canyon National Park -->
-        <div class="park-card grand-canyon">
+        
+        <div class="park-card">
             <div class="image-container">
-                <img src="Grand Canyon National Park.jpg" 
-                     alt="Vast panoramic view of the Grand Canyon with layered red rock formations" 
-                     width="640" 
-                     height="427"
-                     title="Grand Canyon - South Rim View">
+                <img 
+                    src="Grand Canyon National Park.jpg" 
+                    alt="Grand Canyon view from South Rim showing layered rock formations" 
+                    width="640" 
+                    height="427" 
+                    title="Grand Canyon South Rim view at sunset"
+                    style="background-color: #fffaed;">
             </div>
-            <h2>Grand Canyon National Park</h2>
-            <div class="description">
-                <p>The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona. This stunning view from the South Rim shows the incredible layers of rock and dramatic colors during sunset.</p>
-            </div>
-            <div class="license">
-                <p>Image License: Creative Commons Attribution 4.0 (CC BY 4.0). This image may be used freely with attribution to the original photographer.</p>
+            <h2 class="park-title">Grand Canyon National Park</h2>
+            <p class="park-description">The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona. This stunning view from the South Rim shows the incredible layers of rock and dramatic colors during sunset.</p>
+            <div class="license-info">
+                Image License: Creative Commons Attribution 4.0 (CC BY 4.0). This image may be used freely with attribution to the original photographer.
             </div>
         </div>
-
-        <!-- Yellowstone National Park -->
-        <div class="park-card yellowstone">
+        
+        <div class="park-card">
             <div class="image-container">
-                <img src="Yellowstone National Park.jpg" 
-                     alt="Aerial view of Grand Prismatic Spring with vibrant rainbow-colored bacterial mats" 
-                     width="640" 
-                     height="427"
-                     title="Grand Prismatic Spring - Yellowstone">
+                <img 
+                    src="Yellowstone National Park.jpg" 
+                    alt="Yellowstone's Grand Prismatic Spring with vibrant colors" 
+                    width="640" 
+                    height="427" 
+                    title="Grand Prismatic Spring in Yellowstone National Park">
             </div>
-            <h2>Yellowstone National Park</h2>
-            <div class="description">
-                <p>Yellowstone is famous for its geothermal features, including the Grand Prismatic Spring shown here. The vibrant colors are created by different species of heat-loving bacteria living around the edges of the mineral-rich water.</p>
-            </div>
-            <div class="license">
-                <p>Image License: Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0). This image may be used freely with attribution, and derivative works must be shared under the same license.</p>
+            <h2 class="park-title">Yellowstone National Park</h2>
+            <p class="park-description">Yellowstone is famous for its geothermal features, including the Grand Prismatic Spring shown here. The vibrant colors are created by different species of heat-loving bacteria living around the edges of the mineral-rich water.</p>
+            <div class="license-info">
+                Image License: Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0). This image may be used freely with attribution, and derivative works must be shared under the same license.
             </div>
         </div>
     </div>
+    
+    <div class="divider"></div>
 </body>
 </html>
