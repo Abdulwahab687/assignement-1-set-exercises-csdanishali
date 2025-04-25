@@ -1,0 +1,117 @@
+/* External CSS styles for Gladiator II website */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6d2;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0e6d2;
+}
+
+.nav-links a.active {
+    color: #f0e6d2;
+    border-bottom: 2px solid #f0e6d2;
+}
+
+.section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #8b0000;
+    border-bottom: 2px solid #8b0000;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #8b0000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #6d0000;
+}
+
+.quote {
+    font-style: italic;
+    border-left: 3px solid #8b0000;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.character {
+    margin-bottom: 20px;
+}
+
+.character h3 {
+    margin-bottom: 5px;
+    color: #8b0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.home-link {
+    color: #f0e6d2;
+    font-weight: bold;
+}
