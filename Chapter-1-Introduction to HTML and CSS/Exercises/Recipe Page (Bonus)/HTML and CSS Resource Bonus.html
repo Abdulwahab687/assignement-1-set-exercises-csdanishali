@@ -1,0 +1,229 @@
+<!DOCTYPE html> <!--this is used to start the HTML-->>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <title>HTML & CSS Quick Reference</title> <!-- Page title that appears in browser tabs -->
+    <link rel="stylesheet" href="style2.css"> <!-- External CSS file link -->
+</head>
+<body>
+    <!-- Header Section - Contains the page title and subtitle -->
+    <header>
+        <h1>HTML & CSS Quick Reference</h1> <!-- Main page heading -->
+        <p>Essential guide for HTML & CSS</p> <!-- Subtitle/description -->
+    </header>
+
+    <main>
+        <!-- Introduction Section - Brief overview of the page content -->
+        <section id="introduction"> <!-- Section with ID for navigation/styling -->
+            <h2>Introduction</h2> <!-- Section heading -->
+            <p>Quick overview of HTML tags and CSS properties with examples.</p> <!-- Introduction text -->
+        </section>
+
+        <!-- HTML Tags Section - Showcases common HTML elements with examples -->
+        <section id="html-tags">
+            <h2>HTML Tags</h2> <!-- Section heading -->
+            
+            <!-- Basic Structure Tags - Core HTML document structure elements -->
+            <div class="tag-example"> <!-- Container for each tag example -->
+                <h3>&lt;html&gt;</h3> <!-- Tag name displayed with HTML entities -->
+                <p>Root element</p> <!-- Brief description of the tag -->
+                <pre><code>&lt;html lang="en"&gt;...&lt;/html&gt;</code></pre> <!-- Code example in preformatted text -->
+            </div>
+
+            <div class="tag-example">
+                <h3>&lt;head&gt;</h3> <!-- Head tag example -->
+                <p>Meta info & links</p> <!-- Purpose of the head element -->
+                <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page&lt;/title&gt;
+&lt;/head&gt;</code></pre> <!-- Example with proper indentation -->
+            </div>
+
+            <div class="tag-example">
+                <h3>&lt;body&gt;</h3> <!-- Body tag example -->
+                <p>Visible content</p> <!-- Purpose of the body element -->
+                <pre><code>&lt;body&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+    &lt;p&gt;Content&lt;/p&gt;
+&lt;/body&gt;</code></pre> <!-- Example showing basic body structure -->
+            </div>
+
+            <!-- Common Content Tags - Elements used for page content -->
+            <div class="tag-example">
+                <h3>Headings</h3> <!-- Heading tags group -->
+                <p>Levels h1-h6</p> <!-- Description of heading hierarchy -->
+                <pre><code>&lt;h1&gt;Main&lt;/h1&gt;
+&lt;h2&gt;Sub&lt;/h2&gt;</code></pre> <!-- Example of different heading levels -->
+            </div>
+
+            <div class="tag-example">
+                <h3>&lt;p&gt;</h3> <!-- Paragraph tag -->
+                <p>Paragraph</p> <!-- Purpose description -->
+                <pre><code>&lt;p&gt;Text here&lt;/p&gt;</code></pre> <!-- Simple paragraph example -->
+            </div>
+
+            <div class="tag-example">
+                <h3>&lt;a&gt;</h3> <!-- Anchor/link tag -->
+                <p>Hyperlink</p> <!-- Purpose description -->
+                <pre><code>&lt;a href="url"&gt;Link&lt;/a&gt;</code></pre> <!-- Example with href attribute -->
+            </div>
+
+            <div class="tag-example">
+                <h3>&lt;img&gt;</h3> <!-- Image tag -->
+                <p>Image</p> <!-- Purpose description -->
+                <pre><code>&lt;img src="img.jpg" alt="desc"&gt;</code></pre> <!-- Example with src and alt attributes -->
+            </div>
+
+            <!-- List Tags - Ordered and unordered list elements -->
+            <div class="tag-example">
+                <h3>Lists</h3> <!-- List elements group -->
+                <p>Ordered & unordered</p> <!-- Types of lists -->
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre> <!-- Unordered list example -->
+            </div>
+
+            <!-- Container Tags - Generic container elements -->
+            <div class="tag-example">
+                <h3>&lt;div&gt; & &lt;span&gt;</h3> <!-- Container tags -->
+                <p>Containers</p> <!-- Purpose description -->
+                <pre><code>&lt;div&gt;Block&lt;/div&gt;
+&lt;span&gt;Inline&lt;/span&gt;</code></pre> <!-- Examples of block and inline containers -->
+            </div>
+
+            <!-- Table Tags - Elements for tabular data -->
+            <div class="tag-example">
+                <h3>Table</h3> <!-- Table elements group -->
+                <p>Data tables</p> <!-- Purpose description -->
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Head&lt;/th&gt;
+        &lt;td&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre> <!-- Basic table structure example -->
+            </div>
+
+            <!-- Form Tags - Elements for user input -->
+            <div class="tag-example">
+                <h3>Forms</h3> <!-- Form elements group -->
+                <p>User input</p> <!-- Purpose description -->
+                <pre><code>&lt;form&gt;
+    &lt;input type="text"&gt;
+    &lt;button&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre> <!-- Simple form example -->
+            </div>
+
+            <!-- Code Display Tags - Elements for displaying code -->
+            <div class="tag-example">
+                <h3>&lt;pre&gt; & &lt;code&gt;</h3> <!-- Code formatting tags -->
+                <p>Code snippets</p> <!-- Purpose description -->
+                <pre><code>&lt;pre&gt;&lt;code&gt;Code&lt;/code&gt;&lt;/pre&gt;</code></pre> <!-- Example of code formatting -->
+            </div>
+
+            <!-- Semantic Tags - Meaningful structural elements -->
+            <div class="tag-example">
+                <h3>Semantic</h3> <!-- Semantic elements group -->
+                <p>Meaningful tags</p> <!-- Purpose description -->
+                <pre><code>&lt;header&gt;...&lt;/header&gt;
+&lt;main&gt;...&lt;/main&gt;</code></pre> <!-- Examples of semantic elements -->
+            </div>
+        </section>
+
+        <!-- CSS Properties Section - Common CSS properties with examples -->
+        <section id="css-properties">
+            <h2>CSS Properties</h2> <!-- Section heading -->
+            
+            <!-- Basic Styling - Text and background colors -->
+            <div class="tag-example">
+                <h3>Color</h3> <!-- Color properties group -->
+                <pre><code>color: #333;
+background: #f5f5f5;</code></pre> <!-- Text and background color examples -->
+            </div>
+
+            <div class="tag-example">
+                <h3>Text</h3> <!-- Text styling properties -->
+                <pre><code>font-family: Arial;
+font-size: 16px;
+text-align: center;</code></pre> <!-- Font and text alignment examples -->
+            </div>
+
+            <!-- Box Model - Width, padding, margin, border -->
+            <div class="tag-example">
+                <h3>Box</h3> <!-- Box model properties -->
+                <pre><code>width: 100%;
+padding: 20px;
+margin: 10px;
+border: 1px solid;</code></pre> <!-- Box model examples -->
+            </div>
+
+            <!-- Layout - Display and positioning -->
+            <div class="tag-example">
+                <h3>Layout</h3> <!-- Layout properties -->
+                <pre><code>display: flex;
+position: relative;</code></pre> <!-- Display and positioning examples -->
+            </div>
+
+            <!-- Flexbox - Flexible box layout -->
+            <div class="tag-example">
+                <h3>Flexbox</h3> <!-- Flexbox properties -->
+                <pre><code>.container {
+    display: flex;
+    justify-content: center;
+}</code></pre> <!-- Basic flexbox container example -->
+            </div>
+
+            <!-- Grid - CSS grid layout -->
+            <div class="tag-example">
+                <h3>Grid</h3> <!-- Grid properties -->
+                <pre><code>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}</code></pre> <!-- Two-column grid example -->
+            </div>
+
+            <!-- Animation - Transitions and animations -->
+            <div class="tag-example">
+                <h3>Animation</h3> <!-- Animation properties -->
+                <pre><code>transition: all 0.3s;
+animation: slide 1s;</code></pre> <!-- Transition and animation examples -->
+            </div>
+
+            <!-- Media Queries - Responsive design -->
+            <div class="tag-example">
+                <h3>Media</h3> <!-- Media query example -->
+                <pre><code>@media (min-width: 768px) {
+    body { font-size: 18px; }
+}</code></pre> <!-- Responsive design example -->
+            </div>
+        </section>
+
+        <!-- Best Practices - HTML and CSS recommendations -->
+        <section id="best-practices">
+            <h2>Best Practices</h2> <!-- Section heading -->
+            <div class="tag-example">
+                <h3>HTML</h3> <!-- HTML best practices -->
+                <ul>
+                    <li>Use semantic tags</li> <!-- Recommendation for semantic markup -->
+                    <li>Include alt text</li> <!-- Accessibility recommendation -->
+                    <li>Proper structure</li> <!-- Document structure recommendation -->
+                </ul>
+            </div>
+            <div class="tag-example">
+                <h3>CSS</h3> <!-- CSS best practices -->
+                <ul>
+                    <li>External stylesheets</li> <!-- Code organization recommendation -->
+                    <li>Purpose-based names</li> <!-- Naming convention recommendation -->
+                    <li>Responsive design</li> <!-- Device compatibility recommendation -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - Page footer with attribution -->
+    <footer>
+        <p>Quick Reference | By Muhammad Abbas</p> <!-- Copyright/attribution information -->
+    </footer>
+</body>
+</html>
