@@ -1,156 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Development Study Planner</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI FEST 2022</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <img src="university-logo.png" alt="University Logo" class="logo" />
-      <div class="header-text">
-        <h1>Web Development Study Planner</h1>
-        <p>Creative Computing - Year 1</p>
-      </div>
-    </div>
-  </header>
+    <header>
+        <h1>DIGI FEST 2022</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">What's On</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <ul class="nav-list">
-      <li><a href="#" class="active">Dashboard</a></li>
-      <li><a href="#">Schedule</a></li>
-      <li><a href="#">Tasks</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Progress</a></li>
-    </ul>
-  </nav>
+    <main>
+        <section class="content">
+            <article>
+                <h2>Welcome</h2>
+                <p>Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating 'collaboration', so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.</p>
+                <div class="code-image">
+                    <img src="Programming code on screen.jpg" alt="Programming code">
+                </div>
+            </article>
+        </section>
 
-  <main>
-    <section class="column" id="weekly-schedule">
-      <div class="section-header">
-        <h2>Weekly Schedule</h2>
-        <button type="button">Add Session</button>
-      </div>
-      <ul class="schedule-list">
-        <li>
-          <strong>Monday, 10:00 - 12:00</strong>
-          <p>HTML Fundamentals - Introduction to semantic HTML elements and document structure</p>
-        </li>
-        <li>
-          <strong>Tuesday, 14:00 - 16:00</strong>
-          <p>CSS Styling Workshop - Hands-on practice with CSS selectors and properties</p>
-        </li>
-        <li>
-          <strong>Thursday, 11:00 - 13:00</strong>
-          <p>JavaScript Basics - Introduction to variables, functions, and DOM manipulation</p>
-        </li>
-        <li>
-          <strong>Friday, 09:00 - 11:00</strong>
-          <p>Lab Session - Practical exercises applying HTML, CSS, and JavaScript</p>
-        </li>
-        <li>
-          <strong>Friday, 13:00 - 15:00</strong>
-          <p>Study Group - Collaborative work on portfolio projects</p>
-        </li>
-      </ul>
-    </section>
+        <aside class="sidebar">
+            <h2>Line Up</h2>
+            <ul>
+                <li>- Introduction to HTML and CSS</li>
+                <li>- Links and images</li>
+                <li>- Page Layout</li>
+            </ul>
+            <div class="image-container">
+                <div class="sidebar-image">
+                    <img src="Circuit board close-up.jpg" alt="Circuit board">
+                </div>
+                <div class="sidebar-image">
+                    <img src="Digital technology.png" alt="Digital technology">
+                </div>
+            </div>
+        </aside>
+    </main>
 
-    <section class="column" id="tasks">
-      <div class="section-header">
-        <h2>Tasks & Assignments</h2>
-        <button type="button">Add Task</button>
-      </div>
-      <div class="progress-container">
-        <label for="progress">Module progress: 45%</label>
-        <progress id="progress" value="45" max="100"></progress>
-      </div>
-      <ul class="task-list">
-        <li>
-          <input type="checkbox" id="task1" />
-          <label for="task1">Personal Portfolio Website - Create a responsive personal portfolio using HTML and CSS (Due: Oct 15)</label>
-        </li>
-        <li>
-          <input type="checkbox" id="task2" />
-          <label for="task2">CSS Layout Exercise - Complete the flexbox and grid layout exercises (Due: Oct 8)</label>
-        </li>
-        <li>
-          <input type="checkbox" id="task3" checked />
-          <label for="task3">HTML Form Components - Create a contact form with validation (Completed)</label>
-        </li>
-        <li>
-          <input type="checkbox" id="task4" />
-          <label for="task4">JavaScript Problem Set - Complete the basic algorithm challenges (Due: Oct 10)</label>
-        </li>
-        <li>
-          <input type="checkbox" id="task5" />
-          <label for="task5">Midterm Preparation - Review lecture notes and complete practice questions (Due: Oct 20)</label>
-        </li>
-      </ul>
-    </section>
-
-    <section class="column" id="resources">
-      <div class="section-header">
-        <h2>Resources & Notes</h2>
-        <button type="button">Add Resource</button>
-      </div>
-      <ul class="resource-list">
-        <li>
-          <strong>HTML5 Reference Guide</strong>
-          <p>Comprehensive guide to HTML5 elements and attributes</p>
-          <a href="#">Download PDF</a>
-        </li>
-        <li>
-          <strong>CSS Flexbox Tutorial</strong>
-          <p>Interactive tutorial for mastering flexbox layouts</p>
-          <a href="#">Visit Tutorial</a>
-        </li>
-        <li>
-          <strong>JavaScript DOM Manipulation</strong>
-          <p>Lecture recording on dynamic webpage content</p>
-          <a href="#">Watch Video</a>
-        </li>
-        <li>
-          <strong>Responsive Design Code Examples</strong>
-          <p>Sample code for media queries and responsive layouts</p>
-          <a href="#">View Code</a>
-        </li>
-        <li>
-          <strong>My Notes: CSS Grid</strong>
-          <p>Personal notes from the CSS Grid workshop</p>
-          <a href="#">Edit Notes</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Course Syllabus</a></li>
-          <li><a href="#">Assessment Criteria</a></li>
-          <li><a href="#">Lecture Recordings</a></li>
-          <li><a href="#">Support Resources</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <p><strong>Module Leader:</strong> Dr. Sarah Johnson</p>
-        <p><strong>Email:</strong> s.johnson@university.ac.uk</p>
-        <p><strong>Office Hours:</strong> Tuesdays, 13:00-15:00</p>
-      </div>
-      <div class="footer-section">
-        <h3>Help & Support</h3>
-        <p>Need assistance with your studies?</p>
-        <button type="button">Get Help</button>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Creative Computing Department. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2022 DigiFest Ltd.</p>
+    </footer>
 </body>
 </html>
