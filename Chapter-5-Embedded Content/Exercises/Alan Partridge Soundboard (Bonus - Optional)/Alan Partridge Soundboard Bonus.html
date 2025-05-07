@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Partridge Soundboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Alan Partridge Soundboard</h1>
+        <p class="tagline">A-ha!</p>
+    </header>
+
+    <main>
+        <section class="soundboard-container">
+            <div class="page-controls">
+                <button id="prev-page" class="nav-button" aria-label="Previous page">&larr;</button>
+                <span id="page-indicator">Page 1</span>
+                <button id="next-page" class="nav-button" aria-label="Next page">&rarr;</button>
+            </div>
+
+            <div class="soundboard" id="sample-grid">
+                <!-- Sample buttons will be dynamically generated here -->
+            </div>
+        </section>
+
+        <section class="text-to-speech">
+            <h2>Text to Speech</h2>
+            <textarea id="tts-input" placeholder="Type text here for Alan to say..."></textarea>
+            <div class="tts-controls">
+                <button id="speak-button">Speak</button>
+                <select id="voice-select">
+                    <option value="default">Default Voice</option>
+                    <option value="alan">Alan Voice</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 North Norfolk Digital</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
